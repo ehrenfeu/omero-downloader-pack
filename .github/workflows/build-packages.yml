@@ -15,7 +15,7 @@ jobs:
 
     build-and-package:
 
-        name: Build package 📦 using pixi-build-python 🧚📦🐍
+        name: Build package 🧚📦🐍
 
         runs-on: ubuntu-24.04
 
@@ -30,12 +30,13 @@ jobs:
               uses: actions/checkout@v6
 
             - name: Run Pixi-Pack 🧚📦
-              uses: ehrenfeu/pixi-pack-action-python@v7.3
+              uses: ehrenfeu/pixi-pack-action-python@v7
               with:
                   platform: ${{ matrix.platform }}
 
             - name: 📤 Upload to Release
               uses: softprops/action-gh-release@v3
               with:
-                  files: "${{ github.event.repository.name }}-*.sh, ${{
-                      github.event.repository.name }}-*.ps1"
+                  files: |
+                      ${{ github.event.repository.name }}-*.sh
+                      ${{ github.event.repository.name }}-*.ps1
