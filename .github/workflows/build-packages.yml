@@ -30,7 +30,7 @@ jobs:
               uses: actions/checkout@v6
 
             - name: Run Pixi-Pack 🧚📦
-              uses: ehrenfeu/pixi-pack-action-python@v7
+              uses: imcf/pixi-pack-action-python@v1
               with:
                   platform: ${{ matrix.platform }}
 
