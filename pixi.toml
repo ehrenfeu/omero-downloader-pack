@@ -3,9 +3,9 @@ authors = ["Niko Ehrenfeuchter <nikolaus.ehrenfeuchter@unibas.ch>"]
 channels = ["conda-forge", "https://prefix.dev/imcf"]
 name = "omero-downloader-pack"
 platforms = ["linux-64", "win-64"]
-version = "0.2.1.a11"
+version = "0.2.1.a12"
 
 [tasks]
 
 [dependencies]
-omero-downloader = ">=0.2.1.a11,<0.3"
+omero-downloader = ">=0.2.1.a12,<0.3"
